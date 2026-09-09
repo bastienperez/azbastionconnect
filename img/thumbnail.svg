@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">AzBastionConnect - Native RDP through Azure Bastion</title>
+  <desc id="desc">A flat vector illustration showing a Windows computer connected through Azure Bastion to an Azure cloud.</desc>
+
+  <defs>
+    <style>
+      .charcoal { fill: #1C1D29; }
+      .orange { fill: #DE761D; }
+      .bright-orange { fill: #FF6A00; }
+      .light { fill: #F3F3F7; }
+      .white { fill: #FFFFFF; }
+      .outline-charcoal { fill: none; stroke: #1C1D29; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .outline-orange { fill: none; stroke: #DE761D; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .label { font-family: "Segoe UI", Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 1.2px; fill: #686874; }
+    </style>
+  </defs>
+
+  <rect width="600" height="600" rx="12" fill="#FFFFFF"/>
+  <rect x="1.5" y="1.5" width="597" height="597" rx="10.5" fill="none" stroke="#DE761D" stroke-width="2"/>
+
+  <text x="300" y="52" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="0.6" fill="#DE761D">WINDOWS | NATIVE RDP</text>
+  <text x="300" y="115" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="47" font-weight="700" fill="#1C1D29">AzBastionConnect</text>
+  <text x="300" y="150" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#55555F">Native RDP through Azure Bastion</text>
+  <rect x="262" y="169" width="76" height="4" rx="2" fill="#DE761D"/>
+
+  <rect x="24" y="222" width="552" height="264" rx="34" fill="#F3F3F7"/>
+  <circle cx="300" cy="354" r="115" fill="#FFFFFF"/>
+
+  <!-- Continuous secure connection -->
+  <path d="M172 344 H438" fill="none" stroke="#FF6A00" stroke-width="24" stroke-linecap="round"/>
+  <path d="M172 344 H438" fill="none" stroke="#FFD0AF" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 10"/>
+
+  <!-- Local Windows computer -->
+  <g aria-label="Windows computer">
+    <rect x="35" y="275" width="157" height="112" rx="13" fill="#1C1D29"/>
+    <rect x="48" y="288" width="131" height="84" rx="5" fill="#FFFFFF"/>
+    <rect x="83" y="307" width="28" height="22" rx="1.5" fill="#DE761D"/>
+    <rect x="116" y="307" width="28" height="22" rx="1.5" fill="#DE761D"/>
+    <rect x="83" y="334" width="28" height="22" rx="1.5" fill="#DE761D"/>
+    <rect x="116" y="334" width="28" height="22" rx="1.5" fill="#DE761D"/>
+    <circle cx="113.5" cy="379.5" r="3.5" fill="#FFFFFF"/>
+    <path d="M93 387 L89 411 H138 L134 387 Z" fill="#1C1D29"/>
+    <rect x="72" y="407" width="83" height="13" rx="6.5" fill="#1C1D29"/>
+    <circle cx="178" cy="344" r="13" fill="#FFFFFF" stroke="#FF6A00" stroke-width="8"/>
+  </g>
+
+  <!-- Azure Bastion gateway -->
+  <g aria-label="Azure Bastion gateway">
+    <path d="M300 236 L365 268 V334 C365 383 338 422 300 443 C262 422 235 383 235 334 V268 Z" fill="#1C1D29"/>
+    <path d="M300 252 L349 277 V334 C349 372 330 402 300 420 C270 402 251 372 251 334 V277 Z" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+    <path d="M279 356 V326 C279 299 321 299 321 326 V356 Z" fill="#FFFFFF" stroke="#FF6A00" stroke-width="9" stroke-linejoin="round"/>
+    <circle cx="300" cy="338" r="5" fill="#DE761D"/>
+  </g>
+
+  <!-- Azure cloud and servers -->
+  <g aria-label="Azure cloud">
+    <path d="M433 403
+             C410 403 391 385 391 362
+             C391 342 405 325 424 321
+             C427 291 452 267 484 267
+             C511 267 534 284 542 308
+             C562 311 577 328 577 349
+             C577 378 555 403 525 403 Z"
+          fill="#FFFFFF" stroke="#1C1D29" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="432" cy="344" r="13" fill="#FFFFFF" stroke="#FF6A00" stroke-width="8"/>
+    <rect x="462" y="311" width="76" height="26" rx="5" fill="#1C1D29"/>
+    <rect x="462" y="342" width="76" height="26" rx="5" fill="#1C1D29"/>
+    <rect x="462" y="373" width="76" height="18" rx="5" fill="#1C1D29"/>
+    <circle cx="474" cy="324" r="3.5" fill="#FF6A00"/>
+    <circle cx="486" cy="324" r="3.5" fill="#FF6A00"/>
+    <rect x="516" y="321" width="11" height="5" rx="2.5" fill="#FFFFFF"/>
+    <circle cx="474" cy="355" r="3.5" fill="#FF6A00"/>
+    <circle cx="486" cy="355" r="3.5" fill="#FF6A00"/>
+    <rect x="516" y="352" width="11" height="5" rx="2.5" fill="#FFFFFF"/>
+  </g>
+
+  <text class="label" x="114" y="463" text-anchor="middle">WINDOWS PC</text>
+  <text class="label" x="300" y="472" text-anchor="middle">AZURE BASTION</text>
+  <text class="label" x="490" y="463" text-anchor="middle">AZURE CLOUD</text>
+
+  <g transform="translate(164 520)">
+    <circle cx="8" cy="8" r="8" fill="#DE761D"/>
+    <path d="M5 8 L7.2 10.2 L11.5 5.8" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="25" y="13" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600" fill="#1C1D29">Secure access with native mstsc.exe</text>
+  </g>
+</svg>
