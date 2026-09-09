@@ -64,8 +64,8 @@ In the Azure portal, verify that **Native Client Support** is enabled on the Bas
 From the repository directory, run:
 
 ```powershell
-Import-Module .\Invoke-AzureBastionConnect.ps1 -Force
-Invoke-AzureBastionConnect
+Import-Module .\Invoke-AzBastionConnect.ps1 -Force
+Invoke-AzBastionConnect
 ```
 
 The graphical interface opens on a three-step header: **Azure account**, **Virtual machine**, **Connect**. The steps turn green as you go, so you always see what is left to do.
@@ -83,7 +83,7 @@ The graphical interface opens on a three-step header: **Azure account**, **Virtu
 For use without the graphical interface. Select the Bastion host and virtual machine with the Up and Down arrows, press Enter to confirm, or press Escape to cancel. After selecting the Bastion host, all virtual machines are shown by default. Start typing to search by VM name or resource group, use Backspace to edit the search, or Delete to clear it:
 
 ```powershell
-Invoke-AzureBastionConnect -Console
+Invoke-AzBastionConnect -Console
 ```
 
 ## How it works
