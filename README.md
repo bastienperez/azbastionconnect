@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="img/thumbnail-1200.png" alt="AzBastionConnect: native RDP through Azure Bastion" width="380">
+</p>
+
 # AzBastionConnect
 
 Easily connect to your Azure VMs through Azure Bastion, from a WPF graphical interface or in console mode. AzBastionConnect opens the session in the standard Windows Remote Desktop client (`mstsc.exe`) instead of a browser, giving you the familiar native RDP experience, including clipboard copy and paste when allowed by the VM configuration and your organization's security policies.
@@ -63,6 +67,16 @@ From the repository directory, run:
 Import-Module .\Invoke-AzureBastionConnect.ps1 -Force
 Invoke-AzureBastionConnect
 ```
+
+The graphical interface opens on a three-step header: **Azure account**, **Virtual machine**, **Connect**. The steps turn green as you go, so you always see what is left to do.
+
+![The AzBastionConnect window, with the Azure account connected, the subscription, Bastion host and virtual machine pickers, and the Connect to VM button](img/usage.png)
+
+- **Azure account**: shows the signed-in account and a **Disconnect** button. If no session exists, the tool runs `az login` for you.
+- **Subscription**, **Bastion host**, **Virtual machine**: three dropdowns filled from your own permissions. Picking a Bastion host filters the virtual machines it can reach.
+- **Connect to VM**: downloads the `.rdp` file if needed and opens `mstsc.exe` on the machine.
+- **Delete temporary RDP files**: clears the `.rdp` files left in the temp folder by previous sessions.
+- **Activity log**: unfold it to follow what the tool is doing, and to read the Azure CLI errors when a connection fails.
 
 ### Console mode
 
