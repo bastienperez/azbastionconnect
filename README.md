@@ -106,9 +106,11 @@ To check which account and tenant each subscription comes from:
 az account list --all --query "[].{name:name, tenant:tenantId, user:user.name}" -o table
 ```
 
-If the `user` or `tenant` column does not match your account, the subscription comes from the Azure CLI cache. The **Disconnect** button of the tool does the same sign-out. Note that `az account clear` removes the sessions of all accounts signed in on the machine, not only the unwanted one.
+If the `user` or `tenant` column does not match your account, the subscription comes from the Azure CLI cache.
 
-Clear the cache, then sign in again with the right account:
+> **Warning:** `az account clear` removes the sessions of all accounts signed in on the machine, not only the unwanted one.
+
+Use the **Disconnect** button of the tool, or run these commands, then sign in again with the right account:
 
 ```powershell
 az logout
