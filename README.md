@@ -94,6 +94,28 @@ Invoke-AzBastionConnect -Console
 4. Reuses a recent `.rdp` file (less than one hour old) if one exists, otherwise downloads a new one via `az network bastion rdp`.
 5. A button lets you clean up recent `.rdp` files from the temp folder.
 
+## FAQ
+
+### Why do I see subscriptions from another account?
+
+The tool relies on the Azure CLI, which lists every subscription available to the accounts cached on the machine. You can also see subscriptions that belong to another tenant if your account is a guest there (B2B) or if an Azure Lighthouse delegation exists.
+
+To check which account and tenant each subscription comes from:
+
+```powershell
+az account list --all --query "[].{name:name, tenant:tenantId, user:user.name}" -o table
+```
+
+If the `user` or `tenant` column does not match your account, the subscription comes from the Azure CLI cache. Clear it, then sign in again with the right account:
+
+```powershell
+az logout
+az account clear
+az login
+```
+
+The **Disconnect** button of the tool does the same sign-out. Note that `az account clear` removes the sessions of all accounts signed in on the machine, not only the unwanted one.
+
 ## Disclaimer
 
 AzBastionConnect is an independent tool and is **not affiliated with, endorsed by, or sponsored by Microsoft**. Azure and Azure Bastion are trademarks of Microsoft Corporation, used here for descriptive purposes only.
