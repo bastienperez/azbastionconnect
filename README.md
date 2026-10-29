@@ -108,7 +108,8 @@ az account list --all --query "[].{name:name, tenant:tenantId, user:user.name}" 
 
 If the `user` or `tenant` column does not match your account, the subscription comes from the Azure CLI cache.
 
-> **Warning:** `az account clear` removes the sessions of all accounts signed in on the machine, not only the unwanted one.
+> [!WARNING]
+> `az account clear` removes the sessions of all accounts signed in on the machine, not only the unwanted one.
 
 Use the **Disconnect** button of the tool, or run these commands, then sign in again with the right account:
 
